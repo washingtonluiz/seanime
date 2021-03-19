@@ -1,0 +1,12 @@
+.main {
+  padding: 30px 0;
+}
+.main .wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .list-style {
+  display: flex;
+  flex-wrap: wrap;
+}

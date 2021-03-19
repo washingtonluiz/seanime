@@ -1,0 +1,78 @@
+.header {
+  background: var(--backgroundColor);
+  box-shadow: 0 0 10px #cdcdce;
+  padding: 10px 0;
+}
+.header .wrap {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header--logo {
+  align-items: center;
+  display: flex;
+}
+.header--logo img {
+  margin-right: 15px;
+  width: 60px;
+}
+.header--logo > div {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 300;
+}
+.header--logo > div span {
+  font-weight: 500;
+}
+.search__input {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 15px;
+  position: relative;
+}
+.search__input__ico-search .ico-refresh {
+  width: 17px;
+}
+.search__input__ico-search img {
+  width: 20px;
+}
+.search__input__ico-search{
+  align-items: center;
+  background: var(--borderColor);
+  border: none;
+  border-radius: 0 4px 4px 0;
+  color: #808080;
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  position: absolute;
+  right: 15px;
+  width: 40px;
+}
+.search__input label {
+  margin-right: 10px;
+}
+.search__input input{
+  width: 100%;
+}
+
+@media screen and (min-width: 481px){
+  .search__input input{
+    transition: width 0.5s ease-in-out;
+    width: 250px;
+  }
+  .search__input input:focus{
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .header--logo img {
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,9 @@
+:root {
+  --primaryFontFamily: 'Roboto', sans-serif;
+  --primaryColor: #e02041;
+  --backgroundColor: #f0f0f5;
+  --borderColor: #dcdce6;
+  --darkColor: #333333;
+  --blackColor: #000000;
+  --whiteColor: #ffffff;
+}

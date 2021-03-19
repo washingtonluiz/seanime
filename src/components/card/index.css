@@ -1,0 +1,128 @@
+.card{
+  border: 1px solid #d4d4d4;
+  color: var(--whiteColor);
+  height: 400px;
+  margin: 0 5px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 0.5s ease-in-out;
+  width: calc(25% - 10px);
+}
+.card:hover {
+  border: 1px solid #ababab;
+  box-shadow: 0 0 10px #444;
+}
+
+.card__box-content {
+  background: rgba(0, 0, 0, 0.8);
+  bottom: -356px;
+  left: 0;
+  position: relative;
+  transition: bottom 0.5s ease-in-out;
+}
+.card__box-content__header{
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+}
+.list-heroes__item--favorite{
+  cursor: pointer;
+  font-size: 18px;
+}
+.card__box-content.open-detail {
+  bottom: 0 !important;
+}
+.list-heroes__item--favorite .fa-plus {
+  color: var(--whiteColor);
+  margin-right: 10px;
+}
+.list-heroes__item--favorite.favorited {
+  color: red;
+}
+
+.card--title{
+  font-size: 16px;
+  font-weight: 500;
+}
+.card__box-content__body{
+  font-size: 15px;
+  font-weight: 300;
+  height: calc(400px - 44px);
+  overflow-y: auto;
+  padding: 5px 10px;
+  position: relative;
+}
+.card__box-content__body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #bababa;
+}
+
+.card__box-content__body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.card__box-content__body::-webkit-scrollbar-thumb
+{
+	background-color: rgb(235, 235, 234);	
+	background-image: -webkit-linear-gradient(90deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+.card.title-large .card__box-content{
+  bottom: -340px;
+}
+.card.title-large .card--title{
+  font-size: 14px;
+}
+.animation-favorite {
+  animation: removeFavorite 1s linear;
+}
+
+@media screen and (min-width: 901px){
+  .card:hover .card__box-content{
+    bottom: 0 !important;
+  }
+  .list-heroes__item--favorite .fa-heart:hover{
+    animation: heart 1.5s infinite linear;
+  }
+  .list-heroes__item--favorite .fa-plus {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .card {
+    width: calc(33.3333% - 10px);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .card {
+    width: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: 480px){
+  .card {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+  .card__box-content__body {
+    font-size: 18px;
+  }
+  .card--title {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,21 @@
+.navbar {
+  padding-top: 15px;
+}
+.navbar__links {
+  align-items: center;
+  display: flex;
+}
+.navbar__links--link {
+  margin: 0 5px;
+}
+.navbar__links--link a {
+  color: var(--darkColor);
+  font-size: 20px;
+  transition: opacity 0.5s ease-in-out;
+}
+.navbar__links--link a.active {
+  color: #a614a9;
+}
+.navbar__links--link a:hover{
+  opacity: 0.9;
+}

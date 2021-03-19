@@ -1,0 +1,12 @@
+.no-favorite {
+  align-items: center;
+  display: flex;
+  height: calc(100vh - 160px);
+}
+
+.no-favorite--text {
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+}

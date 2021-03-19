@@ -1,0 +1,42 @@
+.card.placeholder {
+  background: var(--backgroundColor);
+  width: calc(25% - 10px);
+}
+.card.placeholder .card__box-content__header, .card.placeholder .card__box-content__body {
+  background: #ccc;
+}
+.card.placeholder .card__box-content__header {
+  padding: 22px 10px;
+}
+.main-placeholder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.card.placeholder:hover .card__box-content {
+  bottom: -356px !important;
+}
+.card.placeholder:hover {
+  border: 1px solid #d4d4d4 !important;
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 900px){
+  .card.placeholder {
+    width: calc(33.3333% - 10px);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .card.placeholder {
+    width: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: 480px){
+  .card.placeholder {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+}
